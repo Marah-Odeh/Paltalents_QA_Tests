@@ -1,0 +1,124 @@
+body {
+  overflow-x: hidden;
+}
+
+.parent {
+  display: flex;
+}
+
+.box {
+  height: 200px;
+  width: 100%;
+  background-color: #17191c;
+  border-radius: 19px;
+  position: relative;
+  z-index: auto;
+  top: 0;
+  left: 0;
+}
+.MuiGridListTileBar-title {
+  font-size: 25px;
+}
+
+.MuiGridListTileBar-subtitle {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.box > :hover {
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+  box-shadow: 1px 1px 10px 10px #17191c;
+}
+
+.MuiGridListTile-tile {
+  border-radius: 19px;
+}
+
+.figure {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.caption {
+  width: 100%;
+  height: 100%;
+  transform: scale(2);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.box:hover .caption {
+  transform: scale(1);
+  opacity: 1;
+  text-align: center;
+}
+
+.about {
+  transform: translateY(-50%);
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.searchbar {
+  margin-top: 0;
+  margin-left: 20px;
+  color: white;
+  padding: 5px;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 19px;
+  color: white;
+  font-weight: 500;
+  text-shadow: -1px 1px 4px rgba(255, 255, 255, 0.8);
+  justify-content: "center";
+  color: "#e0e0e0";
+}
+
+.h3 {
+  margin-top: 38px;
+  color: rgb(255, 26, 117);
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.grid {
+  flex-direction: "row";
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .grid {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0px;
+    padding-right: 50px;
+    top: 0px;
+  }
+  .h1 {
+    margin-top: 100px;
+    font-size: 10px;
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .grid {
+    margin-left: 75px;
+  }
+}

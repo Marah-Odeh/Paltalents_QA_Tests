@@ -1,0 +1,225 @@
+.Content {
+  width: 100%;
+  max-width: 1500px;
+  margin: 150px auto;
+}
+
+.Content > .Header {
+  background: #ffffff url(../components/images/Rozana.jpg) center center
+    no-repeat;
+  width: 100%;
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 45vh;
+}
+
+.Content > .Header > .Layer {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #fff;
+  height: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 200px 0;
+  background-color: rgb(0 0 0 / 59%);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.Content > .Body {
+  background-color: #ffffff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.Content > .Body .Info {
+  padding: 0;
+  display: table;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 690px) {
+  .Content > .Body .Info > li {
+    flex-direction: column;
+  }
+}
+
+.Content > .Body .Info li {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 0 1 auto;
+}
+
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.About {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  margin: 25px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  background-color: white;
+  flex-grow: 0.2;
+  width: 45%;
+  justify-content: space-around;
+}
+
+.Agenda {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  justify-content: left;
+  margin: 25px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  background-color: white;
+  flex-grow: 0.2;
+  width: 45%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+ul::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+  margin-right: 10px;
+}
+ul::-webkit-scrollbar-track-piece,
+body::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+ul::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 89px;
+}
+
+ul {
+  padding-inline-start: 0;
+  padding-right: 10px;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.Content > .Body .Agenda li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  height: 40px;
+  padding: 25px 10px;
+  border-radius: 13px;
+}
+
+.Content > .Body .Agenda li .EventDay {
+  display: flex;
+  margin: auto;
+  background-color: rgb(18, 19, 20);
+}
+
+.Content > .Body .Agenda li:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.Content > .Body .Agenda li:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+.Content > .Body .Agenda li .Talent-Tag {
+  width: 150px;
+  overflow: hidden;
+}
+
+.Title {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.Round-Button {
+  border: none;
+  background-color: #b61254;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: normal;
+  border-radius: 15px;
+  color: white;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.Round-Button:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.Request-Button {
+  border: none;
+  background-color: #b61254;
+  padding: 10px 9px;
+  font-size: 15px;
+  font-weight: normal;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.Request-Button:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.About > q {
+  word-break: break-word;
+  font-size: 16px;
+}
+
+.About > span {
+  display: flex;
+  align-items: center;
+}
+
+.About > span > p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Info > li > span {
+  display: flex;
+  align-content: center;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.Info > li > span > img {
+  margin-right: 10px;
+}
+
+@media (max-width: 1016px) {
+  .About {
+    width: 90%;
+    margin: 25px auto;
+  }
+  .Agenda {
+    width: 90%;
+    margin: 25px auto;
+  }
+}

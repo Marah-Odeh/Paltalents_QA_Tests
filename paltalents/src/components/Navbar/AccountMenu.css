@@ -1,0 +1,18 @@
+.Account-Menu {
+  color: white;
+  background: black;
+}
+
+.Avatar-Button {
+  margin-right: 10px;
+  margin-left: -3px;
+  cursor: pointer;
+}
+.menu-item-Avatar {
+  margin-right: 10px;
+  margin-left: 30%;
+  cursor: pointer;
+}
+.menu-item:hover {
+  background: rgb(70, 70, 70);
+}

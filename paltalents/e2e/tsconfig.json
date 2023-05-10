@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "inlineSourceMap": false,
+    "declaration": false,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "outDir": "tmp/",
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "exclude": [
+    "node_modules",
+    "**/*/*.d.ts",
+    "**/*/*.js.map"
+  ]
+  ,
+  "include": [
+    "**/*.spec.ts",
+    "Configurations"
+  ]
+}

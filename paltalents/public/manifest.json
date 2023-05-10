@@ -1,0 +1,15 @@
+{
+  "short_name": "Palestine Talent",
+  "name": "Palestine Talent",
+  "icons": [
+    {
+      "src": "PalestineTalents_logo.jpg",
+      "sizes": "215x215",
+      "type": "image/jpg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

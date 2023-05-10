@@ -1,0 +1,72 @@
+.slider_title {
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 2vw;
+  letter-spacing: 1px;
+  color: #e0e0e0;
+  font-size: 20px;
+  padding-left: 32px;
+  text-shadow: -1px 1px 4px rgba(255, 255, 255, 0.8);
+}
+
+.card-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.card-wrapper:active,
+.card-wrapper:hover,
+.card-wrapper:focus {
+  outline: none;
+  border: none;
+}
+
+.carousel .slick-prev,
+.carousel .slick-next {
+  width: 24px;
+  height: 250px;
+  color: rgba(255, 26, 117, 1);
+  background-color: rgba(255, 26, 117, 0);
+}
+
+.carousel .slick-prev:hover,
+.carousel .slick-prev:focus,
+.carousel .slick-next:hover,
+.carousel .slick-next:focus {
+  color: rgba(255, 26, 117, 1);
+  outline: none;
+  background: rgba(33, 33, 33, 0);
+}
+
+.carousel .slick-prev:before,
+.carousel .slick-next:before {
+  color: rgba(255, 26, 117, 1);
+}
+
+.carousel .slick-next {
+  right: 0;
+  z-index: 1;
+}
+
+.carousel .slick-prev {
+  left: 0;
+  z-index: 1;
+}
+.slick-track {
+  display: flex;
+}
+
+@media (min-width: 960px) {
+  #Trending-Events .slick-track,
+  #Trending-Talents .slick-track {
+    justify-content: center;
+  }
+}
